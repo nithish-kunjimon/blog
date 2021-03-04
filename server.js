@@ -32,5 +32,5 @@ app.get("/", async (req, res) => {
 });
 
 app.use("/articles", articleRouter);
-const PORT = process.env.PORT || 3000;
-app.listen(80);
+const port = process.env.PORT || 3000;
+app.listen(port);
