@@ -1,0 +1,15 @@
+<%- include("../partials/header") %>
+
+<body>
+  <div class="container">
+    <h1 class="mb-1"><%= article.title %></h1>
+    <div class="text-muted mb-2">
+      <%= article.createdAt.toLocaleDateString() %>
+    </div>
+    <a class="btn btn-secondary" href="/">All Articles</a>
+    <a class="btn btn-info" href="/articles/edit/<%= article.id %> ">Edit</a>
+    <div><%- article.sanitizedHtml %></div>
+  </div>
+</body>
+
+</html>
